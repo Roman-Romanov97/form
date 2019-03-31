@@ -1,0 +1,5 @@
+services:
+    form_history:
+        class: App\Service\FormHistoryService
+        arguments:
+          - "@doctrine.orm.default_entity_manager"

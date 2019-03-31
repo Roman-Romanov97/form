@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FeedbackController!{% endblock %}
+
+{% block body %}
+<style>
+    .container{
+        margin-top: 40px;
+    }
+</style>
+
+<div class="container">
+    {{ form_errors(form) }}
+    {{ form_start(form) }}
+    {{ form_row(form.text_feedback) }}
+    {{ form_row(form.user.user_name) }}
+    {{ form_row(form.user.email) }}
+    {{ form_end(form) }}
+</div>
+
+{% endblock %}
